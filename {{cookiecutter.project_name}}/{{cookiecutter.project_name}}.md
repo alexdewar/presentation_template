@@ -7,9 +7,11 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 marp: true
 ---
 
-# Title
+# {{cookiecutter.presentation_title}}
 
-Title slide
+{{cookiecutter.author}}
+
+{{cookiecutter.date}}
 
 ---
 

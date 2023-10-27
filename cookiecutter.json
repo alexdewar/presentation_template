@@ -1,3 +1,6 @@
 {
-  "project_name": "my_marp_presentation"
+  "project_name": "my_marp_presentation",
+  "presentation_title": "Presentation title",
+  "author": "Alex Dewar",
+  "date": "(some date)"
 }
