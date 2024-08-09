@@ -1,4 +1,14 @@
-FILE := {{cookiecutter.project_name}}
+FILE_STEM := {{cookiecutter.project_name}}
+MARP_PATH := node_modules/@marp-team/marp-cli/marp-cli.js
+NODE ?= node
+NPM ?= npm
 
-$(FILE).html: $(FILE).md
-	npx @marp-team/marp-cli@latest $<
+.PHONY: html
+
+html: $(FILE_STEM).html
+
+$(FILE_STEM).html: $(FILE_STEM).md $(MARP_PATH)
+	$(NODE) $(MARP_PATH) $<
+
+$(MARP_PATH):
+	$(NPM) install
