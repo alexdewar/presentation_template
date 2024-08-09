@@ -1,0 +1,9 @@
+{
+  "name": "{{ cookiecutter.project_name }}",
+  "version": "1.0.0",
+  "description": "{{ cookiecutter.presentation_title }}",
+  "author": "{{ cookiecutter.author }}",
+  "dependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  }
+}
