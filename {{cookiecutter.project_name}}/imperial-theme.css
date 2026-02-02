@@ -6,9 +6,20 @@
 section {
     background-color: #ffffff; /* Change this to your desired color */
     font-family: 'Arial', 'Helvetica', sans-serif; /* Set main font here */
+    color: black;
 }
 
-/* Your custom overrides */
+/* Formatting for normal slides */
+h1 {
+    color: #0000cd;
+    font-size: 1.5rem;
+}
+
+/* Font size for normal text content */
+p, li, td, th {
+    font-size: 0.8rem;
+}
+
 /* Formatting for title slide */
 section.title-slide {
     position: relative;
@@ -42,9 +53,4 @@ section.title-slide h2 {
 
 section.title-slide h3 {
     font-weight: normal;
-}
-
-/* Formatting for normal slides */
-h1 {
-    color: #0000cd;
 }
