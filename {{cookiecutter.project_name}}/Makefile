@@ -1,4 +1,4 @@
-FILE_STEM := {{cookiecutter.project-name}}
+FILE_STEM := {{cookiecutter.project_name}}
 MARP_PATH := node_modules/@marp-team/marp-cli/marp-cli.js
 MARP_FLAGS ?= --allow-local-files --theme-set imperial-theme.css
 NODE ?= node
