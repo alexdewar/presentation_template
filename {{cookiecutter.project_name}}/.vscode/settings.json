@@ -1,6 +1,6 @@
 {
-  "markdown.marp.themes": [
-    "./imperial-theme.css"
-  ],
-  "markdown.marp.html": "all"
+    "markdown.marp.themes": [
+        "./imperial-theme.css"
+    ],
+    "markdown.marp.html": "all"
 }
