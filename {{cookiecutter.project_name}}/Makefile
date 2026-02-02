@@ -5,13 +5,17 @@ NODE ?= node
 NPM ?= npm
 MARP_CMD := $(NODE) $(MARP_PATH) $(MARP_FLAGS)
 
-.PHONY: html pdf all clean
+.PHONY: html pdf all serve clean
 
 html: $(FILE_STEM).html
 
 pdf: $(FILE_STEM).pdf
 
 all: html pdf
+
+serve: $(MARP_PATH)
+	# By default, it uses port 8080, which is likely to be in use by something else
+	env PORT=1984 $(MARP_CMD) --server .
 
 clean:
 	rm -f $(FILE_STEM).pdf $(FILE_STEM).html
