@@ -1,0 +1,1 @@
+{{cookiecutter.project_name}}/.codespell_ignore.txt
