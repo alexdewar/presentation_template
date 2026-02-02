@@ -1,17 +1,15 @@
 ---
-theme: gaia
-_class: lead
-paginate: true
-backgroundColor: #fff
-backgroundImage: url('https://marp.app/assets/hero-background.svg')
 marp: true
+theme: imperial-theme
 ---
+
+<!-- _class: title-slide -->
 
 # {{cookiecutter.presentation_title}}
 
-{{cookiecutter.author}}
+## {{cookiecutter.author}}
 
-{{cookiecutter.date}}
+### {{cookiecutter.date}}
 
 ---
 

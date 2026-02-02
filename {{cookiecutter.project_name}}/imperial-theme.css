@@ -1,0 +1,56 @@
+/* @theme imperial-theme */
+
+@import 'gaia';
+
+/* Global slide styling */
+section {
+    background-color: #ffffff; /* Imperial College London brand background */
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Main font stack for Imperial theme */
+    color: black;
+}
+
+/* Formatting for normal slides */
+h1 {
+    color: #0000cd;
+    font-size: 1.5rem;
+}
+
+/* Font size for normal text content */
+p, li, td, th {
+    font-size: 0.8rem;
+}
+
+/* Formatting for title slide */
+section.title-slide {
+    position: relative;
+    color: #0000cd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+section.title-slide::before {
+    content: "";
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    width: 30%;
+    aspect-ratio: 1548 / 171;
+    background-image: url("./imperial-logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 10;
+}
+
+section.title-slide h1 {
+    font-size: 3rem;
+}
+
+section.title-slide h2 {
+    font-weight: normal;
+}
+
+section.title-slide h3 {
+    font-weight: normal;
+}
